@@ -1,0 +1,23 @@
+{
+  "name": "plate-watch",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Hyderabad food hygiene portal — a static SPA over public inspection data.",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "dev": "npm run collect && vite",
+    "prebuild": "node scripts/collect.mjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
